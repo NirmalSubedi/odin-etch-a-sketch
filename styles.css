@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    width: 6.25vw;
+    height: 6.25vw;
+    background-color: gray;
+}
