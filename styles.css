@@ -11,9 +11,7 @@
 }
 
 .container > div {
-    /* width: 6.25vw; */
-    /* height: 6.25vw; */
-    background-color: gray;
+    background-color: #eee;
 }
 
 button {

@@ -7,7 +7,11 @@ function createSquares() {
 for (let i = 1; i <= totalSquares; i++) {
     const cell = document.createElement("div");
     container.appendChild(cell);
-    cell.addEventListener("mouseenter", event => event.target.style.backgroundColor = "black");
+    const firstColor = Math.floor(Math.random() * 256);
+    const secondColor = Math.floor(Math.random() * 256);
+    const thirdColor = Math.floor(Math.random() * 256);
+    let opacity = 0;
+    cell.addEventListener("mouseenter", event => event.target.style.backgroundColor = `rgba(${firstColor}, ${secondColor}, ${thirdColor}, ${opacity += 0.1})`);
     const squareSize = 100 / (Math.sqrt(totalSquares)); 
     cell.style.width = `${squareSize}vw`;
     cell.style.height = `${squareSize}vw`;
